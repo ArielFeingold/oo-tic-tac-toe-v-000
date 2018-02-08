@@ -100,11 +100,11 @@ end
 
   def winner=(token)
     if won?
-      @token = @board[won?.first]
+      @token = @board[won?.(@board)[0]]
     end
 
   def winner
-    @token = @board[won?.first]
+    @token = @board[won?.(@board)[0]]
   end
 
   end
