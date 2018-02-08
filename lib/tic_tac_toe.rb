@@ -98,9 +98,13 @@ class TicTacToe
   end
 end
 
-  def winner
-    if won? != false
-      @board[won?.first]
+  def winner=(token)
+    if won?
+      @token = @board[won?.first]
     end
+
+  def winner
+    @token = @board[won?.first]
   end
-# end
+
+  end
