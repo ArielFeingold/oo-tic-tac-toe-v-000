@@ -99,7 +99,7 @@ class TicTacToe
 
   def winner
   if won?
-    "X"
+    won?.first
   end
 end
 
