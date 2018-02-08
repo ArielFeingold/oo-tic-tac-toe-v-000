@@ -100,7 +100,7 @@ end
 
   def winner
     if won? != false
-      @board[won?.first]
+      won?.first
     end
   end
 # end
