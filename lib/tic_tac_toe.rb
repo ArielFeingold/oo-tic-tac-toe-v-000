@@ -96,15 +96,5 @@ class TicTacToe
   def over?
     won? || draw? || full?
   end
+
 end
-
-  def winner=(token)
-    if won?
-      @token = @board[won?.(@board)[0]]
-    end
-
-  def winner
-    @token = @board[won?.(@board)[0]]
-  end
-
-  end
