@@ -99,7 +99,7 @@ class TicTacToe
 
   def winner
   if won?
-    won?(@board)[0]
+    won?(@board.first)
   end
 end
 
