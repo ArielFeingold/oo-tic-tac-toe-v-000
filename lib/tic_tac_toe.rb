@@ -99,9 +99,9 @@ class TicTacToe
 end
 
   def winner
-    if win_combination = won?
-      @board[win_combination.first]
-    end
+  if won? != false
+    @board[won?[0]]
   end
+
 
 end
